@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing: border-box;}
+
+body{ font-family: "Noto Sans KR", sans-serif;  height:100dvh}
+#layout{border: 2px solid green; max-width:1280px; margin:auto}
+img {width:100%}
+a{display:block;}
+header{display:flex;  position: relative; z-index: 1; height:15dvh;}
+header h1{flex:2; justify-content: center;}
+[alt="logo"]{width:100%;}
+header div{flex:6; display:flex; text-align: center; height:150vh;}
+header ul{flex:1; padding:1dvh; justify-content: space-around; list-style: none;
+ padding:2dvh 1dvh ; margin:1dvh }
+header ul li nav{ margin:auto; margin-top: 2dvh;  } 
+header ul li nav a{padding:3%;  text-decoration: none; color: black;} 
+
+header ul li nav{height:0; overflow: hidden;}
+header ul li nav a:hover{background:grey; color:azure;}
+
+.mainmenu{font-size: large; text-decoration: none; background: darkslategrey; 
+padding: 0.7dvh 0; color:white; font-size:bold;}
+header ul:hover .sub{height:150dvh;}
+
+header + #pic{ height: 40dvh;}
+#pic {height:30dvh; position: relative; padding-top:3dvh; overflow: hidden;}
+#pic h2 {position: absolute; z-index: 1; left:40%; top:40%
+;background: azure; padding:2%; border-radius: 10%; font-size: large; }
+#pic div{display:flex;}
+#pic div>img{height:200%; border: 2px solid green;}
+
+main{height:45dvh;}
+main div{display:flex; justify-content: space-around;}
+main section{margin-right: 4dvh;}
+h3{border-bottom: 4px solid gray; margin-bottom: 1dvh; }
+h3 a{text-decoration: none; color: black; font-size: x-large;padding:0.4dvh}
+#a{flex:1; list-style: none;}
+#b{flex:1;}
+#c{flex:0.5;}
+#a ul{padding:2dvh; list-style: none;}
+#a ul li a{text-decoration: none; font-size: large;  color:black; display: inline; line-height: 180%;} 
+#a ul li span{float: right;}
+#a ul li:hover {color:skyblue; font-size:large;}
+#a ul li a:hover {color:skyblue; font-size:large; }
+
+#b em {display:inline-block; font-size:large;
+     background: rgb(207, 128, 54); height: 40%; width:40%; border-radius: 50%; text-align: center; padding-top:5dvh; font-weight: bold;}
+#b ol{float:right; margin-top:3dvh }
+
+#c ul li{list-style: none;}
+#c{margin-top: 1.5dvh;}
+
+footer{height:15dvh; border: 2px solid red;}
+footer ul {margin: 2dvh 3dvh;  display:flex; list-style: none;line-height: 3dvh;}
+footer ul li:first-of-type{flex:0.7;}
+footer ul li:nth-of-type(2){flex:1;}
+footer ul li:nth-of-type(3){flex:1; }
+footer ul li:nth-of-type(3) a{display:inline-block;}
